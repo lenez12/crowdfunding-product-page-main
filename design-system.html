@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Manrope:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Design System</title>
+</head>
+
+<body class="bg-white">
+    <main class="container container-main flex">
+        <h1 class="text-black">Mastercraft Bamboo Monitor Riser</h1>
+        <div class="buttons flex">
+            <button type="button" class="btn-primary">Back this project</button>
+            <button type="button" class="btn-primary" disabled>Out of stock</button>
+            <label class="switch">
+                <input aria-label="slider" type="checkbox">
+                <span class="slider round">Bookmarked</span>
+            </label>
+        </div>
+        <article hidden class="product-item flow">
+            <div class="product-item-title flex">
+                <h2>Bamboo Stand</h2>
+                <span class="text-dark">Pledge $25 of more</span>
+            </div>
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                you’ll be added to a special Backer member list.</p>
+            <div class="product-item-footer flex ">
+                <p class="product-stock"><span>101</span> left</p>
+                <button type="button" class="btn-primary">Select Reward</button>
+            </div>
+        </article>
+
+        <section class="card flow">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum odit fugiat dolorem adipisci minima
+                dicta harum unde nisi nulla. Fugit?</p>
+
+            <!-- progressbar -->
+            <div class="progressbar"></div>
+        </section>
+        <section class="product-item flex align-start">
+            <div class="custom-radio">
+                <input aria-label="options1" type="radio" id="options1" name="options" value="options1">
+                <label for="options1"></label>
+            </div>
+            <div class="flow">
+                <div class="flex space-between align-center">
+                    <div class="product-item-title flex space-between align-center">
+                        <h3>Bamboo Stand</h3>
+                        <span class="text-accent">Pledge $25 or more</span>
+                    </div>
+                    <p class="product-stock product-stock--small"><span>101</span> left</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti doloribus minus velit ad,
+                    sunt maiores hic nobis totam voluptatibus ratione quasi voluptates deserunt rerum.</p>
+            </div>
+        </section>
+        <section class="product-item flex align-start active">
+            <div class="custom-radio">
+                <input aria-label="options2" type="radio" id="options2" name="options" value="options2" checked>
+                <label for="options2"></label>
+            </div>
+            <div class="flow">
+                <div class="flex space-between align-center">
+                    <div class="product-item-title flex space-between align-center">
+                        <h3>Bamboo Stand</h3>
+                        <span class="text-accent">Pledge $25 or more</span>
+                    </div>
+                    <p class="product-stock product-stock--small"><span>101</span> left</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti doloribus minus velit ad,
+                    sunt maiores hic nobis totam voluptatibus ratione quasi voluptates deserunt rerum.</p>
+                <form action="#" class="pledge-form flex space-between align-center">
+                    <p>Enter your pledge</p>
+                    <div class="action flex">
+                        <div class="input-box">
+                            <span class="prefix">$</span>
+                            <input type="number" placeholder="00" value="25" />
+                        </div>
+                        <button class="btn-primary" type="button">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section aria-disabled="true" class="product-item flex align-start">
+            <div class="custom-radio">
+                <input aria-label="options3" type="radio" id="options3" name="options" value="options3" disabled>
+                <label for="options3"></label>
+            </div>
+            <div class="flow">
+                <div class="flex space-between align-center">
+                    <div class="product-item-title flex space-between align-center">
+                        <h3 aria-disabled="true">Mahogany Special Edition</h3>
+                        <span class="text-accent" hidden>Pledge $25 or more</span>
+                    </div>
+                    <p class="product-stock product-stock--small"><span>0</span> left</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti doloribus minus velit ad,
+                    sunt maiores hic nobis totam voluptatibus ratione quasi voluptates deserunt rerum.</p>
+            </div>
+        </section>
+
+        <dialog role="dialog" id="dialog" class="flow">
+            <form method="dialog" class="flow">
+                <img src="images/icon-check.svg" alt="icon check">
+                <h3>Thanks for yout support!</h3>
+                <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will
+                    get an email once our campaign is completed.
+                    Got it!</p>
+                <button type="submit" class="btn-primary">Got it</button>
+            </form>
+        </dialog>
+
+        <button type="button" class="btn-primary" onclick="dialog.showModal()">Open Dialog</button>
+    </main>
+</body>
+
+</html>
