@@ -18,6 +18,12 @@
           "dialog"
         ]
       }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-allowed-attr": "off"
+      }
     ]
   }
 }
