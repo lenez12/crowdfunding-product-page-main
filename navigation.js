@@ -54,9 +54,9 @@ function setInitData(id) {
             formPledge.classList.remove("active")
         }
         radio.checked = false
-        item.setAttribute('aria-selected',false)
+        item.classList.remove("active")
         if (item.id === id) {
-            item.setAttribute("aria-selected",true)
+            item.classList.add("active")
             radio.checked = true
              if (formPledge) {
                  formPledge.classList.add("active")
@@ -70,7 +70,7 @@ function changeArticle(e) {
     const formPledge = article.querySelector("div.pledge-form")
     const radio = article.querySelector('input[name="options"]')
      setInitData()
-    article.setAttribute('aria-selected', true)
+    item.classList.add("active")
     if (formPledge) {
         const buttonContinue = formPledge.querySelector('[type="button"]')
         console.log(buttonContinue)
