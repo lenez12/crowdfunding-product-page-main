@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+=======
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scroll-behavior"
+        ]
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "dialog"
+        ]
+      }
+    ]
+  }
+}
+>>>>>>> parent of bc3e23b (1. create navigation & setup mobile navigation)
