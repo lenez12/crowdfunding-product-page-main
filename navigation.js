@@ -39,10 +39,10 @@ function closeModal() {
  }
 
 // menu
-const articles = form.querySelectorAll('[role="article"]')
+const articles = form.querySelectorAll('article')
 articles.forEach((article) => {
     setInitData()
-    const title = article.querySelector("#title")
+    const title = article.querySelector("h3")
     title.addEventListener('click', changeArticle);
 });
 
